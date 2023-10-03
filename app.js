@@ -9,10 +9,10 @@ const PORT = 8080;
 
 app.use(express.json());
 
-// app.use("/api",apiruta);
-app.get('/api',apiruta, (req, res) => {
-    // res.send('Hola, mundo!');
-  });
+app.use("/api",apiruta);
+// app.get('/api',apiruta, (req, res) => {
+//     // res.send('Hola, mundo!');
+//   });
   
 
 
@@ -25,7 +25,7 @@ app.listen(PORT,()=>{
 
 
 
-app.get('/', (req, res) => {
-  res.send('Hola, mundo!');
-});
+// app.get('/', (req, res) => {
+//   res.send('Hola, mundo!');
+// });
 
